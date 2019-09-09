@@ -6,7 +6,14 @@ def check_HDL(HDL_result):
     else:
         return "Low!"
 
-def interface():
+def cholesterol_interface():
+    print("Cholesterol Check:")
+    chol_input = input("Enter your cholesterol test results= ")
+    chol_data = chol_input.split('=')
+    if chol_data[0] == 'HDL':
+        result = check_HDL(int(chol_data[1]))
+        print("The result is {}".format(result))
+
     print("My Calculator Program")
     keep_running = True
     while keep_running:
@@ -19,14 +26,3 @@ def interface():
         elif choice == '1':
             cholesterol_interface()
     return
-
-def cholesterol_interface():
-    print("Cholesterol Check:")
-    chol_input = input("Enter your cholesterol test results= ")
-    chol_data = chol_input.split('=')
-    if chol_data[0] == 'HDL':
-        result = check_HDL(int(chol_data[1]))
-        print("The result is {}".format(result))
-
-if __name__ == '__main__':
-    interface()
