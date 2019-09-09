@@ -11,11 +11,22 @@ def interface():
     keep_running = True
     while keep_running:
         print("Option: ")
+        print("1 - Cholsterol checks")
         print("9 - Quit")
         choice = input("Enter your choice: ")
         if choice == '9':
             keep_running = False
+        elif choice == '1'
+        cholesterol_interface()
     return
+
+def cholesterol_interface():
+    print("Cholesterol Check!")
+    chol_input = input("Enteryour cholesterol test results: ")
+    chol_data = chol_input.split('=')
+    if chol_data[0] == 'HDL':
+        result = check_HDL(int(chol_data[1]))
+        print("The result is {}":.format(result))
 
 if __name__ == '__main__':
     interface()
