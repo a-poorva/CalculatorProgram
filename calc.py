@@ -17,7 +17,7 @@ def interface():
         if choice == '9':
             keep_running = False
         elif choice == '1':
-        cholesterol_interface()
+            cholesterol_interface()
     return
 
 def cholesterol_interface():
