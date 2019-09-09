@@ -26,7 +26,7 @@ def cholesterol_interface():
     chol_data = chol_input.split('=')
     if chol_data[0] == 'HDL':
         result = check_HDL(int(chol_data[1]))
-        print("The result is {}":.format(result))
+        print("The result is {}".format(result))
 
 if __name__ == '__main__':
     interface()
