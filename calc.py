@@ -21,7 +21,7 @@ def interface():
     return
 
 def cholesterol_interface():
-    print("Cholesterol Check!")
+    print("Cholesterol Check:")
     chol_input = input("Enter your cholesterol test results= ")
     chol_data = chol_input.split('=')
     if chol_data[0] == 'HDL':
