@@ -10,9 +10,9 @@ def cholesterol_interface():
     print("Cholesterol Check:")
     chol_input = input("Enter your cholesterol test results= ")
     chol_data = chol_input.split('=')
-        if chol_data[0] == 'HDL':
-            result = check_HDL(int(chol_data[1]))
-            print("The result is {}".format(result))
+    if chol_data[0] == 'HDL':
+        result = check_HDL(int(chol_data[1]))
+        print("The result is {}".format(result))
 
 def interface():
     print("My Calculator Program")
